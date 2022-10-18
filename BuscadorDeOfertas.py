@@ -7,7 +7,7 @@ class BuscadorDeOfertas:
     self.nomeDoProduto = nomeDoProduto
 
   def buscarValorDoProduto(self,nomeDoProduto):
-    buscarNaAmazon(nomeDoProduto)
+    self.buscarNaAmazon()
 
   def buscarNaAmazon(self):
     with sync_playwright() as p:
